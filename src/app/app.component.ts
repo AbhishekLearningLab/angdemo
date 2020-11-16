@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import faqs from '../assets/faqs.json';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'directlinkexercise';
+  public faqsList:{id:string, question:string, answer:string}[] = faqs;
 }
